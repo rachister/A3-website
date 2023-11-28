@@ -49,6 +49,10 @@
         text-align: center;
       }
 
+      .buisimage p {
+        text-align: justify;
+      }
+
       #home p {
         text-align: justify;
         width: 100%;
@@ -175,20 +179,20 @@
 
       #businessimg {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        padding: 10px;
       }
 
-      .buisimage p {
-        text-align: justify;
-      }
+
 
       #business p a {
         text-align: center;
         color: white;
         text-decoration: none;
       }
-
 
       @media screen and (max-width: 700px) {
         .country {
@@ -201,6 +205,14 @@
         }
 
         #businessimg {
+          grid-template-columns: 1fr;
+        }
+
+        #backgroundimg {
+          grid-template-columns: 1fr;
+        }
+
+        #image {
           grid-template-columns: 1fr;
         }
       }
