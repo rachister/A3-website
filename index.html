@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <style>
       * {
-        border: 1px solid #0f0;
+        border: 0px solid #0f0;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -27,7 +27,7 @@
       header {
         background-color: #FCE3BE;
         padding: 0px;
-        height: 20px;
+        height: 25px;
         text-align: left;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -49,8 +49,39 @@
         text-align: center;
       }
 
+      #home p {
+        text-align: justify;
+        width: 100%;
+        padding: 10px;
+      }
+
+      #image {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+
+      /*BACKGROUND PAGE*/
+
+      #background {
+        background-color: #FCE3BE;
+      }
+
       #background h1 {
         color: #B27D15;
+      }
+
+      #backgroundimg {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        padding: 10px;
       }
 
       /*background timeline*/
@@ -106,16 +137,17 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         padding: 30px;
-        background-color: #FCE3BE;
-        color: #B27D15;
+        background-color: #D2B891;
+        color: white;
+
       }
 
 
       #uk,
       #canada,
       #us {
-        background-color: #D2B891;
-        color: white;
+        background-color: #FCE3BE;
+        color: #B27D15;
       }
 
 
@@ -135,13 +167,17 @@
         padding: 30px;
       }
 
+      #business h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
       #businessimg {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
       }
-
 
       .buisimage p {
         text-align: justify;
@@ -217,7 +253,7 @@
         <div class="event" style="left: 65%;">2022<br>CANADA</div>
         <div class="event" style="left: 87%;">2023<br>COSTA RICA &amp US</div>
       </div>
-      <div id="image2">
+      <div id="backgroundimg">
         <a href="#india"> <img src="india.jpeg" alt="image of India" width="200" height="250"></a>
         <a href="#uk"> <img src="uk.jpeg" alt="image of UK" width="200" height="250"></a>
         <a href="#dubai"> <img src="dubai.jpeg" alt="iamge of Dubai" width="200" height="250"></a>
@@ -371,8 +407,9 @@
             decided to name the business handmadebyrachi.
           </p>
         </div>
+        <p><a href="https://handmadebyrachi.wixsite.com/shop">Check Out My Store!</a></p>
+
       </div>
-      <p><a href="https://handmadebyrachi.wixsite.com/shop">Check Out My Store!</a></p>
     </div>
   </body>
 
